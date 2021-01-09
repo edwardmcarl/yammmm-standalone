@@ -1,0 +1,19 @@
+{
+  "name": "yammmm-standalone",
+  "version": "1.0.0",
+  "description": "WIP Standalone app, designed for use alongside Magic Mirror that does a simple visualization of audio currently playing on the device",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron --enable-transparent-visuals ."
+  },
+  "author": "Edward Carl",
+  "license": "MIT",
+  "dependencies": {
+    "audify": "^1.5.2",
+    "electron": "^11.0.4",
+    "fft-windowing": "^0.1.4",
+    "fourier-transform": "^1.1.2",
+    "getconfig": "^4.5.0"
+  }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script type="text/javascript" charset="utf-8">
+    config = require('getconfig');
+    let newCanvas = document.createElement('canvas');
+    newCanvas.setAttribute('id','visual');
+    newCanvas.setAttribute('width', config.width);
+    newCanvas.setAttribute('height', config.height);
+    document.body.appendChild(newCanvas);
+</script>
+<script src="application.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
