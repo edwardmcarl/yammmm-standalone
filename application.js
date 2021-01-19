@@ -8,7 +8,7 @@
  *    B) position-to-bin mappings, but those, again, can be easily fit in brief functions.
  * 
  * I could separate this into a 'client' and 'server', but the only reason to do so would be if I wanted slightly better performance for
- * multiple simultaneous visualizations, which isn't a use case I ever intended.
+ * multiple simultaneous visualizations, which isn't an intended use case.
  */
 const { RtAudio, RtAudioFormat, RtAudioStreamFlags } = require('audify');
 const ft = require('fourier-transform');
@@ -177,7 +177,7 @@ function draw() {
     if (oldMagnitudes !== undefined) { //oldMagnitudes is undefined for the very first draw cycle
       smoothing(magnitudes, oldMagnitudes, config.smoothingConstant)
     }
-    binHeights = calculateBinHeights(magnitudes, binMap);
+    let binHeights = calculateBinHeights(magnitudes, binMap);
 
     canvasContext.fillStyle = 'rgb(0,0,0)';
     canvasContext.fillRect(0, 0, canvas.width, canvas.height);

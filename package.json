@@ -15,5 +15,8 @@
     "fft-windowing": "^0.1.4",
     "fourier-transform": "^1.1.2",
     "getconfig": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0"
   }
 }
