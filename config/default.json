@@ -1,8 +1,9 @@
 {
+    "name": "raspberrypi",
     "xPos": 0,
-    "yPos": 740,
+    "yPos": 780,
     "width": 1920,
-    "height": 340,
+    "height": 300,
 
     "sampleRate": 48000,
     "frameSize": 1920,
@@ -13,8 +14,12 @@
     "minPlottedFreq": 100,
     "maxPlottedFreq": 7000,
     "stretchFactor": 1.3,
-    "smoothingConstant": 0.8,
+    "smoothingConstant": 0.7,
+    "drawWave": false,
     "minBinWidth": 4,
-    "binCount": 250
-
+    "binCount": 250,
+    "clientId": "7cf6a2b49a9d4883ba110f2fa5ec193b",
+    "clientSecret": "a037cb1394044f4aa7c4ef52a44dd2ec",
+    "refreshToken": "AQAZg9t6lSv0t6hB9gcBRFyuemRXtFqPxB1pqZtCdsa2pK1mQwBt4qDrCjxO9QoeZ8a_HL0RugxMf6R3ooA9CqhnkcWq3krFewkbsqSDABXGRVJdYfIBIfhTIZUrAhwunrA",
+    "ignoreDevices": ["Bluetooth 3.0 Keyboard"]
 }

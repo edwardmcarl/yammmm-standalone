@@ -4,14 +4,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<!-- wrapper (w/ height -height), holds content, followed by footer visualizer-->
 <script type="text/javascript" charset="utf-8">
-    config = require('getconfig');
+    const config = require('getconfig');
+    let contentWrapper = document.createElement('div');
+    contentWrapper.setAttribute('id', 'wrapper')
+    
     let newCanvas = document.createElement('canvas');
     newCanvas.setAttribute('id','visual');
     newCanvas.setAttribute('width', config.width);
-    newCanvas.setAttribute('height', config.height);
+    newCanvas.setAttribute('height', config.height)
+    
+    document.body.appendChild(contentWrapper);
+    //contentWrapper.after(afterWrapper);
     document.body.appendChild(newCanvas);
+    newCanvas.setAttribute('height', config.width * (newCanvas.clientHeight / newCanvas.clientWidth));
+    //contentWrapper.setAttribute('height', 1080 - newCanvas.height);
 </script>
-<script src="application.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src = "node_modules/cardinal-spline-js/curve.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="visualizer.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>

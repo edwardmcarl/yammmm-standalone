@@ -11,10 +11,16 @@
   "license": "MIT",
   "dependencies": {
     "audify": "^1.5.2",
-    "electron": "^11.0.4",
+    "axios": "^0.21.1",
+    "cardinal-spline-js": "^2.3.10",
+    "dayjs": "^1.9.7",
+    "dbus-next": "^0.9.1",
+    "electron": "^11.2.0",
+    "eslint": "^7.17.0",
     "fft-windowing": "^0.1.4",
     "fourier-transform": "^1.1.2",
-    "getconfig": "^4.5.0"
+    "getconfig": "^4.5.0",
+    "spotify-web-api-node": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^7.17.0"
